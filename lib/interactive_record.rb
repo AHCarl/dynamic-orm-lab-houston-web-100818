@@ -48,8 +48,9 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
   
-  def self.find_by(k: v)
-    sql ="SELECT * FROM #{self.table_name} WHERE ('#{k}' = #{v})"
+  def self.find_by(args)
+    args.each {|arg| 
+    
     DB[:conn].execute(sql)
   end
   
