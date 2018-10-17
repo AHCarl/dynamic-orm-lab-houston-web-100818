@@ -44,7 +44,7 @@ class InteractiveRecord
   end
   
   def self.find_by_name 
-    sql = "SELECT * FROM #{table_name} WHERE "
+    sql = "SELECT * FROM #{self.table_name} WHERE "
   end
   
 end
