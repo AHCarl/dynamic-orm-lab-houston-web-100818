@@ -49,5 +49,8 @@ class InteractiveRecord
   end
   
   def self.find_by(args)
+    sql =<<-SQL
+    SELECT * FROM "#{self.table_name}" WHERE 
+  end
   
 end
