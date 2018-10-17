@@ -26,7 +26,7 @@ class InteractiveRecord
   end
   
   def col_names_for_insert
-    self.column_names.flatten
+    self.class.column_names.flatten
   end
   
 end
