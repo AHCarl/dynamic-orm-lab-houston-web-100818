@@ -17,7 +17,7 @@ class InteractiveRecord
     column_names.compact
   end
   
-  self.column_names.each {|row| 
+  self.column_names.each {|col| col.
   
   def initialize(props={})
     props.each {|k, v| self.send(("#{k}="), v)}
