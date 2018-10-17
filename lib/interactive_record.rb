@@ -48,8 +48,7 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
   
-  def self.find_by(args)
-    args.each {|k, v| self.send(("#{k}="), v)}
+  def self.find_by(args:)
     sql ="SELECT * FROM '#{self.table_name}' WHERE '#{:arg}' = '#{arg}'"
     DB[:conn].execute(sql)
   end
