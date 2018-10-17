@@ -21,4 +21,6 @@ class InteractiveRecord
   def initialize(props={})
     props.each {|k, v| self.send(("#{k}="), v)}
   end
+  
+  
 end
