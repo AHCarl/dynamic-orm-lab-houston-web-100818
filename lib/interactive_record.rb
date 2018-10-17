@@ -49,7 +49,7 @@ class InteractiveRecord
   end
   
   def self.find_by(args)
-    args.each {|arg| 
+    args.each {|k, v| 
     
     DB[:conn].execute(sql)
   end
