@@ -7,5 +7,5 @@ class InteractiveRecord
     self.to_s.downcase.pluralize
   end
   
-  def self
+  def self.
 end
