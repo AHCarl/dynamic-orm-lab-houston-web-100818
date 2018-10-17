@@ -50,7 +50,9 @@ class InteractiveRecord
   
   def self.find_by(args)
     sql = ""
-    args.each {|k, v| 
+    args.each do |k, v| 
+      sql = "SELECT * FROM #{table_name} WHERE #{k}= '#{v}"
+    end
     
     DB[:conn].execute(sql)
   end
